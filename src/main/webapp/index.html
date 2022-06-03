@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Document</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="css/bootstrap.min.css"/>
+        <style>
+            .red{
+                color: red;
+            }
+            .yelow{
+                color:#ffcc00;
+            }
+        </style>
+    </head>
+    <body>
+
+
+
+        <div class="row">
+            <div class="col-3">
+                <div class="container" style="max-width: 500px; margin-left: 50px; margin-top: 80px">
+                    <h1>Registrar Alumno</h1>
+                    <hr />
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="nomrol" id="n" placeholder="Nombre"/>
+                        <br>
+                        <input type="text" class="form-control" name="nomrol" id="t" placeholder="Telefono" />
+                        <br>
+                        <input type="text" class="form-control" name="nomrol" id="c" placeholder="Correo" />
+                        <br>
+                        <input type="hidden" name="id" id="id" value="0"/>
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-primary" onclick="add()">Enviar</button>
+
+                    </div>
+                </div>
+                <div class="container" id="resultado" style="max-width: 500px"></div>
+            </div>
+
+            
+            
+        
+            
+      
+            
+           <div class="col-9" style="padding: 10px; margin-left: 600px; margin-top: -348px">
+                <h1>Listar Alumnos</h1>
+                <hr/>
+                <div class="form-group">
+                    
+                </div>
+                <div class="a" id="resultado1" style="width: 900px"></div>
+            </div>
+            
+            <div class="container" style="margin-left: 595px; margin-top: -255px">
+            <table class="table" id="tablita">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">ID</th>
+                        <th scope="col">TITULO</th>
+                        <th scope="col">POST</th>
+                        <th scope="col" colspan="2">ACCION</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+        </div>
+            
+            
+            
+            
+        </div>
+
+
+
+        <script src="js/Jquery.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/5.5.2/bootbox.min.js"></script>
+        <script src="js/post.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>
